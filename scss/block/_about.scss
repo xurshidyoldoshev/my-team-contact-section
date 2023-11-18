@@ -1,0 +1,185 @@
+.about {
+
+    &__container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 350px;
+        color: #FFF;
+        font-family: Livvic;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100px;
+        margin-bottom: 16px;
+        /* 156.25% */
+    }
+
+    &__text {
+        max-width: 540px;
+        color: #F67E7E;
+        font-family: Livvic;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        margin-bottom: 32px;
+        /* 150% */
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: center;
+        gap: 23px;
+
+        &__text {
+            max-width: 445px;
+            color: #FFF;
+            font-family: Livvic;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            /* 155.556% */
+        }
+
+        &::before {
+            content: "";
+            background-image: url(../../img/about_item_img1.svg);
+            background-repeat: no-repeat;
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        &:nth-child(2)::before {
+            content: "";
+            background-image: url(../../img/about_item_img2.svg);
+            background-repeat: no-repeat;
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        &:last-child::before {
+            content: "";
+            background-image: url(../../img/about_item_img3.svg);
+            background-repeat: no-repeat;
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+    }
+}
+
+.about__input {
+    max-width: 445px;
+    width: 100%;
+    color: #FFF;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    /* 166.667% */
+    letter-spacing: -0.115px;
+    opacity: 0.6;
+    padding: 0px 81px 17px 14px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__input__block {
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about__textarea {
+    max-width: 445px;
+    width: 100%;
+    color: #FFF;
+    flex-shrink: 0;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    /* 166.667% */
+    letter-spacing: -0.115px;
+    opacity: 0.6;
+    padding: 0px 81px 17px 14px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__input__btn {
+    color: #004047;
+    font-family: Livvic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 155.556% */
+    max-width: 123px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    padding: 8px 33px 10px 32px;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1070px) {
+    .about__container {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__information__block {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 64px;
+    }
+    .about__input__block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about__title {
+        font-size: 64px;
+        line-height: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .about__text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
